@@ -1,10 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+// router
+import { BrowserRouter as Router } from 'react-router-dom';
+// css
+import 'assets/css/index.css';
+// components
+import { SidenavProvider } from 'components/Sidenav';
+import Portfolio from 'app.jsx';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+
+ReactDOM.render(
+  <SidenavProvider>
+    <Router>
+      <Portfolio />
+    </Router>
+  </SidenavProvider>,
+  document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
