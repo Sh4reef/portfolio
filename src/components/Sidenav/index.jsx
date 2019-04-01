@@ -13,7 +13,7 @@ export class SidenavProvider extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      show: true,
+      show: false,
       activeLink: null
     }
     this.handleRouteChange = this.handleRouteChange.bind(this)
@@ -50,7 +50,7 @@ class Sidenav extends React.Component {
     const { classes, show, activeLink } = this.props
     return (
       <nav
-        style={show ? { opacity: 1 } : { opacity: 0 }}
+        style={show ? { opacity: 1 } : {}}
         className={classNames(
           classes.sidenavContainer,
           'position-fixed h-100 pt-5 pb-4'
@@ -137,6 +137,7 @@ export default withStyles({
     width: '240px',
     overflowY: 'auto',
     overflowX: 'hidden',
+    opacity: '0',
     transition: 'all 0.2s ease-in-out',
     '-webkit-transition': 'all 0.2s ease-in-out',
     '-webkit-overflow-scrolling': 'touch'

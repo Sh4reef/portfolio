@@ -27,7 +27,7 @@ class Portfolio extends React.Component {
               <Fragment>
                 <Sidenav show={show} activeLink={activeLink} onRouteChange={onRouteChange} />
                 <section
-                  style={true && { marginLeft: "240px" }}
+                  style={show ? { marginLeft: "240px" } : {}}
                   className={classNames(
                     classes.contentContainer,
                     'position-relative w-100'
