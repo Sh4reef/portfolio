@@ -10,6 +10,7 @@ import classNames from 'classnames';
 import Sidenav, { SidenavContext } from 'components/Sidenav';
 // views
 import About from 'views/About';
+import Works from 'views/Works';
 
 class Portfolio extends React.Component {
 
@@ -36,6 +37,7 @@ class Portfolio extends React.Component {
                   )}>
                   <Switch>
                     <Route path='/about' render={(props) => (<About {...props} toggleSidenav={toggleSidenav} />)} />
+                    <Route path='/' render={(props) => (<Works {...props} toggleSidenav={toggleSidenav} />)} />
                   </Switch>
                 </section>
               </Fragment>
