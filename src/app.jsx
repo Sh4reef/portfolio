@@ -25,7 +25,7 @@ class Portfolio extends React.Component {
           'd-flex h-100'
         )}>
           <SidenavContext.Consumer>
-            {({ show, activeLink, onRouteChange }) => (
+            {({ show, toggleSidenav, activeLink, onRouteChange }) => (
               <Fragment>
                 <Sidenav show={show} activeLink={activeLink} onRouteChange={onRouteChange} />
                 <section
@@ -35,7 +35,7 @@ class Portfolio extends React.Component {
                     'position-relative w-100'
                   )}>
                   <Switch>
-                    <Route path='/about' component={About} />
+                    <Route path='/about' render={(props) => (<About {...props} toggleSidenav={toggleSidenav} />)} />
                   </Switch>
                 </section>
               </Fragment>

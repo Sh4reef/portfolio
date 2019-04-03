@@ -3,13 +3,14 @@ import React from 'react';
 import withStyles from 'react-jss';
 import classNames from 'classnames';
 
-const About = ({ classes }) => (
+const About = ({ classes, toggleSidenav }) => (
   <div className={classNames(
     classes.aboutContainer,
     'container px-4 px-lg-5 pb-5'
   )}>
     <button
       className="btn btn-link d-md-none p-0 my-5 text-white"
+      onClick={toggleSidenav}
     >
       <i className="fas fa-bars" />
     </button>
