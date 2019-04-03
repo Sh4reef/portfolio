@@ -62,5 +62,10 @@ export default withStyles({
     transition: 'all 0.2s ease-in-out',
     '-webkit-transition': 'all 0.2s ease-in-out',
     '-webkit-overflow-scrolling': 'touch'
+  },
+  '@media (min-width: 768px)': {
+    contentContainer: {
+      marginLeft: '240px'
+    }
   }
 })(withRouter(Portfolio))

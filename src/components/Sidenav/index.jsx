@@ -182,5 +182,10 @@ export default withStyles({
     '& a:hover, a:active': {
       color: '#ff4ba8'
     }
+  },
+  '@media (min-width: 768px)': {
+    sidenavContainer: {
+      opacity: '1'
+    }
   }
 })(withRouter(Sidenav))
