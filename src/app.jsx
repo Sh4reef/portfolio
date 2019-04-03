@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 // router
-import { Switch, withRouter } from 'react-router-dom';
+import { Switch, withRouter, Route } from 'react-router-dom';
 // css
 import 'assets/css/portfolio.css';
 // jss
@@ -8,6 +8,8 @@ import withStyles from 'react-jss';
 import classNames from 'classnames';
 // components
 import Sidenav, { SidenavContext } from 'components/Sidenav';
+// views
+import About from 'views/About';
 
 class Portfolio extends React.Component {
 
@@ -33,7 +35,7 @@ class Portfolio extends React.Component {
                     'position-relative w-100'
                   )}>
                   <Switch>
-                    {/* Routes */}
+                    <Route path='/about' component={About} />
                   </Switch>
                 </section>
               </Fragment>
