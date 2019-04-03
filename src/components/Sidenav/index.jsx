@@ -93,7 +93,7 @@ class Sidenav extends React.Component {
               'my-2 rounded-0',
               { 'pl-5 border-0': activeLink !== '/' }
             )}>
-            <strong>Labs</strong>
+            <strong>Works</strong>
           </NavLink>
           <NavLink
             to="/contact"
