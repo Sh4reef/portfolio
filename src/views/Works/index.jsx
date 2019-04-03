@@ -26,7 +26,7 @@ const Works = ({ classes, toggleSidenav }) => (
       <div className="col-12 col-md-6 mb-5">
         <picture>
           <source
-            srcset="https://uploads.codesandbox.io/uploads/user/ace28234-a8f6-4bad-ac46-ad90b1fe37b9/t9Tq-lab-1.webp"
+            srcSet="https://uploads.codesandbox.io/uploads/user/ace28234-a8f6-4bad-ac46-ad90b1fe37b9/t9Tq-lab-1.webp"
             type="image/webp"
           />
           <img
@@ -49,7 +49,7 @@ const Works = ({ classes, toggleSidenav }) => (
       <div className="col-12 col-md-6 mb-5">
         <picture>
           <source
-            srcset="https://uploads.codesandbox.io/uploads/user/ace28234-a8f6-4bad-ac46-ad90b1fe37b9/UfVR-lab-2.webp"
+            srcSet="https://uploads.codesandbox.io/uploads/user/ace28234-a8f6-4bad-ac46-ad90b1fe37b9/UfVR-lab-2.webp"
             type="image/webp"
           />
           <img
