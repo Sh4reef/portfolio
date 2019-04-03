@@ -16,7 +16,13 @@ export class SidenavProvider extends React.Component {
       show: false,
       activeLink: null
     }
+    this.toggleSidenav = this.toggleSidenav.bind(this)
     this.handleRouteChange = this.handleRouteChange.bind(this)
+  }
+  toggleSidenav() {
+    this.setState((prevState) => ({
+      show: !prevState.show
+    }))
   }
   handleRouteChange(pathname) {
     this.setState({
@@ -28,6 +34,7 @@ export class SidenavProvider extends React.Component {
       <SidenavContext.Provider value={{
         show: this.state.show,
         activeLink: this.state.activeLink,
+        toggleSidenav: this.toggleSidenav,
         onRouteChange: this.handleRouteChange
       }}>
         {this.props.children}
