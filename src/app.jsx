@@ -29,7 +29,7 @@ class Portfolio extends React.Component {
               <Fragment>
                 <Sidenav show={show} activeLink={activeLink} onRouteChange={onRouteChange} />
                 <section
-                  style={true && { marginLeft: "240px" }}
+                  style={show ? { marginLeft: "240px" } : {}}
                   className={classNames(
                     classes.contentContainer,
                     'position-relative w-100'
@@ -64,5 +64,10 @@ export default withStyles({
     transition: 'all 0.2s ease-in-out',
     '-webkit-transition': 'all 0.2s ease-in-out',
     '-webkit-overflow-scrolling': 'touch'
+  },
+  '@media (min-width: 768px)': {
+    contentContainer: {
+      marginLeft: '240px'
+    }
   }
 })(withRouter(Portfolio))

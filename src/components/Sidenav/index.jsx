@@ -13,10 +13,16 @@ export class SidenavProvider extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      show: true,
+      show: false,
       activeLink: null
     }
+    this.toggleSidenav = this.toggleSidenav.bind(this)
     this.handleRouteChange = this.handleRouteChange.bind(this)
+  }
+  toggleSidenav() {
+    this.setState((prevState) => ({
+      show: !prevState.show
+    }))
   }
   handleRouteChange(pathname) {
     this.setState({
@@ -28,6 +34,7 @@ export class SidenavProvider extends React.Component {
       <SidenavContext.Provider value={{
         show: this.state.show,
         activeLink: this.state.activeLink,
+        toggleSidenav: this.toggleSidenav,
         onRouteChange: this.handleRouteChange
       }}>
         {this.props.children}
@@ -50,7 +57,7 @@ class Sidenav extends React.Component {
     const { classes, show, activeLink } = this.props
     return (
       <nav
-        style={show ? { opacity: 1 } : { opacity: 0 }}
+        style={show ? { opacity: 1 } : {}}
         className={classNames(
           classes.sidenavContainer,
           'position-fixed h-100 pt-5 pb-4'
@@ -137,6 +144,7 @@ export default withStyles({
     width: '240px',
     overflowY: 'auto',
     overflowX: 'hidden',
+    opacity: '0',
     transition: 'all 0.2s ease-in-out',
     '-webkit-transition': 'all 0.2s ease-in-out',
     '-webkit-overflow-scrolling': 'touch'
@@ -173,6 +181,11 @@ export default withStyles({
     opacity: '0.16',
     '& a:hover, a:active': {
       color: '#ff4ba8'
+    }
+  },
+  '@media (min-width: 768px)': {
+    sidenavContainer: {
+      opacity: '1'
     }
   }
 })(withRouter(Sidenav))
