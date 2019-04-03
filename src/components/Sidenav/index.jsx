@@ -179,6 +179,9 @@ export default withStyles({
   },
   stayConnected: {
     opacity: '0.16',
+    '& a': {
+      color: '#fff',
+    },
     '& a:hover, a:active': {
       color: '#ff4ba8'
     }
