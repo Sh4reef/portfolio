@@ -21,7 +21,7 @@
     "build-css": "node-sass-chokidar -o src/assets/css src/assets/scss",
     "build": "npm run build-css && react-scripts build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages --repo https://github.com/Sh4reef/react-portfolio.git -d build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
