@@ -40,7 +40,7 @@ const About = ({ classes, toggleSidenav }) => (
           classes.description,
           'mb-4'
         )}>
-          Experienced and skilled web developer used to build creative and modern web application, keeps up for updates in the web development industry, loves to code on{" "}
+          Experienced and skilled frontend web developer, he used to build web applications, keeps up for updates in the web development industry, loves to code on{" "}
           <span className="font-weight-normal">Python</span> and{" "}
           <span className="font-weight-normal">JavaScript</span>.
         </p>
