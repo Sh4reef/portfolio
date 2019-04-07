@@ -26,47 +26,116 @@ const Works = ({ classes, toggleSidenav }) => (
       <div className="col-12 col-md-6 mb-5">
         <picture>
           <source
-            srcSet="https://uploads.codesandbox.io/uploads/user/ace28234-a8f6-4bad-ac46-ad90b1fe37b9/t9Tq-lab-1.webp"
+            srcSet="https://uploads.codesandbox.io/uploads/user/ace28234-a8f6-4bad-ac46-ad90b1fe37b9/NFBd-memory-game.webp"
             type="image/webp"
           />
           <img
             className="img-fluid w-100"
-            src="https://uploads.codesandbox.io/uploads/user/ace28234-a8f6-4bad-ac46-ad90b1fe37b9/BVUl-lab-1.png"
-            alt="Card cap"
+            src="https://uploads.codesandbox.io/uploads/user/ace28234-a8f6-4bad-ac46-ad90b1fe37b9/lSmJ-memory-game.png"
+            alt="memory game"
           />
         </picture>
         <div className={classNames(
           classes.cardBodyBackground,
           'p-4 pb-3'
         )}>
-          <h4 className="m-0 mb-2">colorsup</h4>
+          <h4 className="m-0 mb-2">Memeory Game</h4>
           <p className="mb-2 text-truncate">
             Grasp8 is in pre production phase. More details coming soon
             </p>
-          <a href="https://uploads.codesandbox.io/uploads/user/ace28234-a8f6-4bad-ac46-ad90b1fe37b9/BVUl-lab-1.png">Check now</a>
+          <a href="https://sh4reef.github.io/fend-memory-game/" target="_blank" rel="noopener noreferrer">Preview</a>
         </div>
       </div>
       <div className="col-12 col-md-6 mb-5">
         <picture>
           <source
-            srcSet="https://uploads.codesandbox.io/uploads/user/ace28234-a8f6-4bad-ac46-ad90b1fe37b9/UfVR-lab-2.webp"
+            srcSet="https://uploads.codesandbox.io/uploads/user/ace28234-a8f6-4bad-ac46-ad90b1fe37b9/eZ_D-neighborhood-map.webp"
             type="image/webp"
           />
           <img
             className="img-fluid w-100"
-            src="https://uploads.codesandbox.io/uploads/user/ace28234-a8f6-4bad-ac46-ad90b1fe37b9/Wg2w-lab-2.png"
-            alt="Card cap"
+            src="https://uploads.codesandbox.io/uploads/user/ace28234-a8f6-4bad-ac46-ad90b1fe37b9/N5Hu-neighborhood-map.png"
+            alt="neighborhood map"
           />
         </picture>
         <div className={classNames(
           classes.cardBodyBackground,
           'p-4 pb-3'
         )}>
-          <h4 className="m-0 mb-2">Project Grasp8</h4>
+          <h4 className="m-0 mb-2">Neighborhood Map</h4>
           <p className="mb-2 text-truncate">
             Curated color palate inspiration on your fingure tip
             </p>
-          <a href="https://uploads.codesandbox.io/uploads/user/ace28234-a8f6-4bad-ac46-ad90b1fe37b9/Wg2w-lab-2.png">More screens</a>
+          <a href="https://github.com/Sh4reef/fend-neighborhood-map-react" target="_blank" rel="noopener noreferrer">Source</a>
+        </div>
+      </div>
+      <div className="col-12 col-md-6 mb-5">
+        <picture>
+          <source
+            srcSet="https://uploads.codesandbox.io/uploads/user/ace28234-a8f6-4bad-ac46-ad90b1fe37b9/5AtY-my-read.webp"
+            type="image/webp"
+          />
+          <img
+            className="img-fluid w-100"
+            src="https://uploads.codesandbox.io/uploads/user/ace28234-a8f6-4bad-ac46-ad90b1fe37b9/OBv4-my-read.png"
+            alt="my read"
+          />
+        </picture>
+        <div className={classNames(
+          classes.cardBodyBackground,
+          'p-4 pb-3'
+        )}>
+          <h4 className="m-0 mb-2">My Read</h4>
+          <p className="mb-2 text-truncate">
+            Curated color palate inspiration on your fingure tip
+            </p>
+          <a href="https://github.com/Sh4reef/fend-myread-react" target="_blank" rel="noopener noreferrer">Source</a>
+        </div>
+      </div>
+      <div className="col-12 col-md-6 mb-5">
+        <picture>
+          <source
+            srcSet="https://uploads.codesandbox.io/uploads/user/ace28234-a8f6-4bad-ac46-ad90b1fe37b9/vJsb-frogger-game.webp"
+            type="image/webp"
+          />
+          <img
+            className="img-fluid w-100"
+            src="https://uploads.codesandbox.io/uploads/user/ace28234-a8f6-4bad-ac46-ad90b1fe37b9/3P5B-frogger-game.png"
+            alt="arcade game"
+          />
+        </picture>
+        <div className={classNames(
+          classes.cardBodyBackground,
+          'p-4 pb-3'
+        )}>
+          <h4 className="m-0 mb-2">Arcade Game</h4>
+          <p className="mb-2 text-truncate">
+            Curated color palate inspiration on your fingure tip
+            </p>
+          <a href="https://sh4reef.github.io/fend-frogger-arcade-game/" target="_blank" rel="noopener noreferrer">Preview</a>
+        </div>
+      </div>
+      <div className="col-12 col-md-6 mb-5">
+        <picture>
+          <source
+            srcSet="https://uploads.codesandbox.io/uploads/user/ace28234-a8f6-4bad-ac46-ad90b1fe37b9/PXQO-sarahah.webp"
+            type="image/webp"
+          />
+          <img
+            className="img-fluid w-100"
+            src="https://uploads.codesandbox.io/uploads/user/ace28234-a8f6-4bad-ac46-ad90b1fe37b9/Q2zJ-sarahah.png"
+            alt="sarahah"
+          />
+        </picture>
+        <div className={classNames(
+          classes.cardBodyBackground,
+          'p-4 pb-3'
+        )}>
+          <h4 className="m-0 mb-2">Sarahah</h4>
+          <p className="mb-2 text-truncate">
+            Curated color palate inspiration on your fingure tip
+            </p>
+          <a href="https://sh4reef.github.io/sarahah/" target="_blank" rel="noopener noreferrer">Preview</a>
         </div>
       </div>
     </div>
