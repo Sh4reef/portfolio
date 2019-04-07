@@ -40,8 +40,7 @@ const About = ({ classes, toggleSidenav }) => (
           classes.description,
           'mb-4'
         )}>
-          I create a creative and modern web application, I always stay up to
-          date in the web development industry, I love to code on{" "}
+          Experienced and skilled web developer used to build creative and modern web application, keeps up for updates in the web development industry, loves to code on{" "}
           <span className="font-weight-normal">Python</span> and{" "}
           <span className="font-weight-normal">JavaScript</span>.
         </p>
