@@ -85,13 +85,13 @@ class Sidenav extends React.Component {
             <strong>About</strong>
           </NavLink>
           <NavLink
-            to="/"
+            to="/portfolio"
             exact
             activeClassName={classes._active}
             className={classNames(
               classes.listGroupItem,
               'my-2 rounded-0',
-              { 'pl-5 border-0': activeLink !== '/' }
+              { 'pl-5 border-0': activeLink !== '/portfolio' }
             )}>
             <strong>Works</strong>
           </NavLink>
@@ -159,7 +159,7 @@ export default withStyles({
     '&, &:active': {
       border: '0',
       paddingLeft: 'calc(3rem - 9px) !important',
-      borderLeft: '9px solid #ff4ba8'
+      borderLeft: '9px solid #ff4ba8 !important'
     },
     '& strong': {
       color: '#ff4ba8'

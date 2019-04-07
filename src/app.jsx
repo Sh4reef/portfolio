@@ -39,7 +39,7 @@ class Portfolio extends React.Component {
                   <Switch>
                     <Route path='/about' render={(props) => (<About {...props} toggleSidenav={toggleSidenav} />)} />
                     <Route path='/contact' render={(props) => (<Contact {...props} toggleSidenav={toggleSidenav} />)} />
-                    <Route path='/' render={(props) => (<Works {...props} toggleSidenav={toggleSidenav} />)} />
+                    <Route path='/portfolio' render={(props) => (<Works {...props} toggleSidenav={toggleSidenav} />)} />
                   </Switch>
                 </section>
               </Fragment>
